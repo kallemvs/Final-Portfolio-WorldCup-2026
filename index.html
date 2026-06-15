@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>2026 FIFA World Cup Cartographic Portfolio</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f1ea;
+      color: #222;
+    }
+
+    section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 48px 32px;
+    }
+
+    h1 {
+      font-size: 38px;
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      max-width: 760px;
+      line-height: 1.5;
+      color: #444;
+    }
+
+    .map-image {
+      width: 100%;
+      display: block;
+      margin-top: 24px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.15);
+    }
+
+    .interactive-map {
+      width: 100%;
+      height: 760px;
+      border: none;
+      margin-top: 24px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.15);
+      background: white;
+    }
+
+    .divider {
+      height: 1px;
+      background: #d8d1c4;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+
+  <section>
+    <h1>2026 FIFA World Cup Cartographic Portfolio</h1>
+    <p>
+      A cartographic look at the expanded 48-team tournament, its host stadiums,
+      time zones and group-stage travel distances.
+    </p>
+  </section>
+
+  <div class="divider"></div>
+
+  <section>
+    <h2>Qualified Teams by Confederation</h2>
+    <p>
+      The first map shows the global distribution of qualified teams and how the
+      48-team tournament is divided between FIFA confederations.
+    </p>
+    <img class="map-image" src="assets/map_1_teams.png" alt="Qualified teams map">
+  </section>
+
+  <div class="divider"></div>
+
+  <section>
+    <h2>16 Stadiums, 4 Time Zones</h2>
+    <p>
+      The second map focuses on the host cities and stadiums across Canada,
+      the United States and Mexico.
+    </p>
+    <img class="map-image" src="assets/map_2_stadiums.png" alt="Host stadiums map">
+  </section>
+
+  <div class="divider"></div>
+
+  <section>
+    <h2>Interactive Team Travel Routes</h2>
+    <p>
+      The final map explores how teams move between stadiums during the group stage.
+      Use the layer menu to compare individual team routes.
+    </p>
+    <iframe class="interactive-map" src="travel_map.html"></iframe>
+  </section>
+
+</body>
+</html>
