@@ -18,6 +18,10 @@
       padding: 48px 32px;
     }
 
+    h1, h2, h3 {
+      text-align:center;
+    }
+
     h1 {
       font-size: 38px;
       margin-bottom: 8px;
@@ -32,6 +36,7 @@
       max-width: 760px;
       line-height: 1.5;
       color: #444;
+      text-align: center;
     }
 
   .map-image {
@@ -238,13 +243,18 @@
   </a>
   </section>
 
-  <div class="divider"></div>
-
   <section>
-    <h2>Interactive Team Travel Routes</h2>
+    <H3>Interactive Team Travel Routes</H3>
     <p>
-      The final map explores how teams move between stadiums during the group stage.
-      Use the layer menu to compare individual team routes.
+      The final map is an interactive map showing the group-stage travel routes of the teams. 
+      The pale lines show the overall travel network created by all team movements between stadiums, while individual team routes can be turned on from the layer menu. 
+      This makes it possible to explore both the general structure of tournament travel and the specific routes of individual teams.
+    </p>
+
+    <p>
+      The purpose of this map is to make the distances of the tournament more tangible.
+      Instead of only showing where the matches are played, the map shows what the spatial structure means in practice for the teams. 
+      The bar chart highlights the teams with the longest group-stage travel distances, and the route information helps connect the numbers to actual places.
     </p>
     <iframe class="interactive-map" src="travel_map.html"></iframe>
   </section>
