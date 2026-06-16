@@ -61,10 +61,14 @@
     }
 
     .interactive-map {
-      width: 100%;
-      height: 760px;
+      display: block;
+      width: 90%;
+      max-width: 1000px;
+      height: 70vh;
+      min-height: 500px;
+      max-height: 720px;
       border: none;
-      margin-top: 24px;
+      margin: 24px auto 0 auto;
       box-shadow: 0 4px 18px rgba(0,0,0,0.15);
       background: white;
     }
@@ -81,14 +85,76 @@
 <body>
 
   <section>
-    <h1>2026 FIFA World Cup Cartographic Portfolio</h1>
+    <h1>Cartographic Visualization in GIS 2026 - Final Portfolio</h1>
     <p>
       A cartographic look at the expanded 48-team tournament, its host stadiums,
       time zones and group-stage travel distances.
     </p>
+    
   </section>
 
   <div class="divider"></div>
+
+  <section>
+    <H2>Cartographic Reflection</H2>
+    <p>
+      The first map from the beginning of the course is actually not bad, although it 
+      may require some zooming in and out in some areas.
+      The choice of font and the map title are probably its strongest elements, 
+      as I think the title describes the content quite well and does so in a visually pleasant way. 
+      I will not even go too deeply into the scale bar, as it is rather unfortunate. 
+      At the time, I clearly had no idea where to place it.
+    </p>
+
+    <p>
+      The data presentation works better in the outer areas of Helsinki, 
+      where the districts are larger and the building years tend to be more similar 
+      within each district. In the central parts of Helsinki, however, 
+      the map becomes somewhat cluttered. The districts are smaller there, 
+      and presenting the average construction year for each district becomes more distracting 
+      than informative. The district boundaries also work better in the outer parts of Helsinki, 
+      while in the centre they are not always clearly visible. 
+      On the other hand, they were never meant to be the main focus of the map. 
+      The idea was to keep them subtle, while still making it possible to understand where 
+      the district borders are.
+    </p>
+
+    <p>
+      I am still not completely sure how well the heatmap behind the buildings works. 
+      In some ways, it looks a bit clumsy, but on the other hand, 
+      it does smooth out the variation within each district quite well. 
+      It also gives a nicer overview of the area than the building colours alone. 
+      The colour scale chosen for the buildings is probably not the best. 
+      I am not sure if the colours themselves are bad, but against the dark background they 
+      create a slightly spooky, almost Halloween-like impression. 
+      I am also not fully sure why I originally chose a dark theme, 
+      as it makes the map feel somewhat aggressive. The main colour of the heatmap is slightly 
+      yellowish, and for that reason the dark background works fairly well, 
+      since yellow can easily disappear on a white background. 
+      Nevertheless, it might have been better to change the colours of the heatmap and 
+      buildings instead of changing the entire background to a dark one. 
+      At the time, however, I felt that dark-themed maps looked cool, and I still think they often do.
+    </p>
+
+    <p>
+      The Data and Methods section could be smaller and should have more breathing room, 
+      as it now feels slightly overstated. Still, the information itself is concise and informative. 
+      The north arrow is also far too emphasized and becomes an unnecessary eye-catcher. 
+      The legend is quite basic, although I still think it was a good idea to categorize the buildings by construction decade.
+    </p>
+
+    <img class="map-image" src="img/1st_map.png" alt="Qualified teams map">
+    <a class="open-map-link" href="img/stadiums.png" target="_blank">
+  View full-size map
+  </a>
+  </section>
+
+  <section>
+    <H2>Description of data</H2>
+    <p>
+      For the data description, I'll start with the "why it interests me" -part. I am a big fan of football, 
+      and as there is the World Cup going on, it felt instantly good idea to make something out of it. 
+    </p>
 
   <section>
     <h2>Qualified Teams by Confederation</h2>
