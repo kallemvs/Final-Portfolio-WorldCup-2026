@@ -144,6 +144,8 @@
   </a>
   </section>
 
+  <div class="divider"></div>
+
   <section>
     <H2>Description of data</H2>
 
@@ -174,33 +176,34 @@
       Additional datasets were used for cartographic background and visual context. 
       From Natural Earth Data, I used country boundaries and time zone polygons. I also used SVG flag files from GitHub user hampusborgos to include the flags of the participating countries.
     </p>
-    
-    <p>
-      For the data description, I'll start with the "why it interests me" -part. I am a big fan of football, 
-      and as there is the World Cup going on, it felt instantly a good idea to make something out of it. Especially, as 
-      the World Cup is bigger than ever in many ways like in the number of teams but also, in a spatial way, as tournament
-      covers whole of the north america spatially. In addition, I had read from the news about the long 
-      distances the teams needs to travel to be able to play the games, it felt like an great idea and I 
-      thought there could be done some beautiful maps about the infernal size of the tournament and the ridiculous distances
-      the teams are required to travel. When I started to look for some good dataset that would cover all the required information, it was 
-      quite literally the first search result that lead me to the openfootball Github account. The account had files from every single world cup
-      there have ever been, including a folder for the 2026 world cup. The folder consisted of 6 .json files, named 
-      "worldcup.groups.json", "worldcup.json", "worldcup.quali_playoffs.json", "worldcup.squads.json", "worldcup.stadiums.json" and "worldcup.teams.json".
-      From those, only the worldcup, teams and stadiums was used. The worldcup -file holded the information of 
-      each game, incuding information of the teams that were playing, where and what time etc. The stadiums file instead
-      was about the stadium like in the construction year, location and so on. The teams -file was used mainly to get 
-      information for each team from which confederation had the team qualified to the world cup. Additional datasets were 
-      used for cartographic background purposes. From Natural Earth Data I acquired the boundaries of each country and the timezone -polygons.
-      Also, from github user hampusborgos I acquired the flags for each country as SVGs.
-      
-    </p>
+
+  </section>
 
   <section>
     <h2>Geospatial Narrative</h2>
+  </section>
+
+  <div class="divider"></div>
+
+  <section>
+
+  <H3>The Contestants</H3>
     
     <p>
-      The first map shows the global distribution of qualified teams and how the
-      48-team tournament is divided between FIFA confederations.
+      The first map shows the global distribution of qualified teams and how the 48-team tournament is divided between FIFA confederations. 
+      The countries are coloured by FIFA confederation, 
+      which makes it possible to see both the worldwide reach of the tournament and the regional structure behind the qualification process. 
+      The map also highlights the expanded 48-team format, where Europe still has by far the largest number of teams, 
+      but the tournament includes a broad selection of countries from every inhabited continent.
+    </p>
+      
+    <p>
+      Instead of labelling all countries directly on the map, I placed the team names and flags in a separate panel.
+      Ofcourse, it requires some knowledge from the observer to know where those countries actually locate on the map, but still, it fel like a good idea.
+      This keeps the map itself cleaner, especially in dense areas such as Europe, Southern- and Central America. 
+      The map therefore works more as a global overview, while the panel provides the exact list of participating teams.
+      And since I have a soft spot for country flags, they were going to make an appearance whether they had a strictly necessary cartographic role or not.
+      Overall, the first map is intended to introduce the topic and show the global coverage of the World Cup.
     </p>
     <img class="map-image" src="img/contestants.png" alt="Qualified teams map">
 
