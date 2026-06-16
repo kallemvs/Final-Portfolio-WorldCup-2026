@@ -85,12 +85,7 @@
 <body>
 
   <section>
-    <h1>Cartographic Visualization in GIS 2026 - Final Portfolio</h1>
-    <p>
-      A cartographic look at the expanded 48-team tournament, its host stadiums,
-      time zones and group-stage travel distances.
-    </p>
-    
+    <h1>Cartographic Visualization in GIS 2026 - Final Portfolio</h1> 
   </section>
 
   <div class="divider"></div>
@@ -151,13 +146,58 @@
 
   <section>
     <H2>Description of data</H2>
+
+    <p>
+      For the data description, I will start with why the topic interested me in the first place. I am a big fan of football, 
+      and with the World Cup coming up, it immediately felt like a good idea to make something out of it. 
+      The 2026 World Cup is larger than previous tournaments in several ways. It has more teams than ever before, but it is also spatially much larger, 
+      as the tournament is spread across Canada, the United States and Mexico. 
+      I had also read news articles about the long distances teams will need to travel between matches, 
+      so the topic felt both interesting and cartographically promising. I thought there could be some visually strong maps about the enormous 
+      size of the tournament and the almost ridiculous distances the teams are required to travel.
+    </p>
+
+    <p>
+      When I started looking for a dataset that would cover the required information, the first useful result led me to the OpenFootball GitHub account. 
+      The repository included files from all previous World Cups, as well as a folder for the 2026 tournament. 
+      This folder contained six JSON files: worldcup.groups.json, worldcup.json, worldcup.quali_playoffs.json, worldcup.squads.json, worldcup.stadiums.json and worldcup.teams.json.
+    </p>
+
+    <p>
+      Of these files, I mainly used worldcup.json, worldcup.teams.json and worldcup.stadiums.json. 
+      The worldcup.json file contained information about each match, including the teams, match location and time. 
+      The stadiums file included information about the stadiums, such as their location, construction year and other stadium-related attributes. 
+      The teams file was mainly used to identify the confederation from which each team had qualified for the World Cup.
+    </p>
+
+    <p>
+      Additional datasets were used for cartographic background and visual context. 
+      From Natural Earth Data, I used country boundaries and time zone polygons. I also used SVG flag files from GitHub user hampusborgos to include the flags of the participating countries.
+    </p>
+    
     <p>
       For the data description, I'll start with the "why it interests me" -part. I am a big fan of football, 
-      and as there is the World Cup going on, it felt instantly good idea to make something out of it. 
+      and as there is the World Cup going on, it felt instantly a good idea to make something out of it. Especially, as 
+      the World Cup is bigger than ever in many ways like in the number of teams but also, in a spatial way, as tournament
+      covers whole of the north america spatially. In addition, I had read from the news about the long 
+      distances the teams needs to travel to be able to play the games, it felt like an great idea and I 
+      thought there could be done some beautiful maps about the infernal size of the tournament and the ridiculous distances
+      the teams are required to travel. When I started to look for some good dataset that would cover all the required information, it was 
+      quite literally the first search result that lead me to the openfootball Github account. The account had files from every single world cup
+      there have ever been, including a folder for the 2026 world cup. The folder consisted of 6 .json files, named 
+      "worldcup.groups.json", "worldcup.json", "worldcup.quali_playoffs.json", "worldcup.squads.json", "worldcup.stadiums.json" and "worldcup.teams.json".
+      From those, only the worldcup, teams and stadiums was used. The worldcup -file holded the information of 
+      each game, incuding information of the teams that were playing, where and what time etc. The stadiums file instead
+      was about the stadium like in the construction year, location and so on. The teams -file was used mainly to get 
+      information for each team from which confederation had the team qualified to the world cup. Additional datasets were 
+      used for cartographic background purposes. From Natural Earth Data I acquired the boundaries of each country and the timezone -polygons.
+      Also, from github user hampusborgos I acquired the flags for each country as SVGs.
+      
     </p>
 
   <section>
-    <h2>Qualified Teams by Confederation</h2>
+    <h2>Geospatial Narrative</h2>
+    
     <p>
       The first map shows the global distribution of qualified teams and how the
       48-team tournament is divided between FIFA confederations.
